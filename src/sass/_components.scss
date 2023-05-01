@@ -1,0 +1,99 @@
+@import './core';
+
+
+
+._link__logo{
+
+    @include font(white, $font-Baloo-Regular, normal, 64px, 64px, 400);
+}
+._menu-wrapper{
+    @include flex(64px, column, center);
+    @include size(21vh, 100%);
+}
+
+
+._menu-wrapper{
+    @include flex(64px, column, center);
+    @include size(21vh, 100%);
+
+    @include spacing(margin, top, 100px);
+
+    ._menu_item{
+        @include size(fit-content, fit-content);
+
+        cursor: pointer;
+
+
+        ._link_icon{
+            display: block;
+            @include size(26px, 26px);
+            @include blurHover();
+            @include transition();
+
+            &._link_icon_home{
+                @include background(url('../images/home.svg'));
+            }
+
+            &._link_icon_stady{
+                @include background(url('../images/styde.svg'));
+                @include size(28px, 23px);
+            }
+
+            &._link_icon_user{
+                @include background(url('../images/user.svg'));
+                @include size(23px, 26px);
+            }
+
+            &._link_icon_mail{
+                @include background(url('../images/mail.svg'));
+                @include size(26px, 23px);
+            }
+
+            &._link_icon_setting{
+                @include background(url('../images/setting.svg'));
+            }
+
+            &._link_icon_logout{
+                @include background(url('../images/logout.svg'));
+            }
+            
+            &:hover{
+                @include blurHover(.5);
+            }
+        }
+
+        &:last-of-type{
+            margin-top: auto;
+        }
+    }
+}
+
+/* <section class="_greeting _greeting_container">
+<div class="_text">
+  <h2 class="_title">Hello Josh!</h2>
+  <p class="_subtytle">It’s good to see you again.</p>
+</div>
+<div class="_user_img"></div>
+</section> */
+
+._greeting{
+    @include block(14px);
+    @include size(620px, 160px);
+    &._greeting_container{
+        @include flex(0, row, space-around);
+    }
+    ._title{
+        @include font(#0C0B0B, $font-Baloo-Regular, normal, 36px, 57px)
+    }
+    ._subtytle{
+        @include font(#0C0B0B, $font-Roboto-Regular, normal, 16px, 24px)
+    }
+       
+        ._user_img{
+        @include background(url('../images/user_img.svg'));
+        @include size(175px, 191px);
+        margin-bottom: 25px;
+         }
+}
+
+    // $color: white, $family: 'Roboto Regular', $style: normal, $size: 14px, $height: 16px, $weight: 400, $underline: none, $underline-offset: 3px)

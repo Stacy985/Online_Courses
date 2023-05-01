@@ -1,0 +1,381 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Baloo Regular";
+  src: url("../fonts/Baloo-Bhaijaan-Regular/BalooBhaijaan-Regular.ttf");
+}
+._link__logo {
+  color: white;
+  font-family: "Baloo Regular";
+  font-style: normal;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 64px;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+._menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  width: 21vh;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+._menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  width: 21vh;
+  height: 100%;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+._menu-wrapper ._menu_item {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+._menu-wrapper ._menu_item ._link_icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  box-sizing: border-box;
+  opacity: 1;
+  transition: all 0.15s ease-out;
+}
+._menu-wrapper ._menu_item ._link_icon._link_icon_home {
+  background-image: url("../images/home.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: none;
+}
+._menu-wrapper ._menu_item ._link_icon._link_icon_stady {
+  background-image: url("../images/styde.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: none;
+  width: 28px;
+  height: 23px;
+  box-sizing: border-box;
+}
+._menu-wrapper ._menu_item ._link_icon._link_icon_user {
+  background-image: url("../images/user.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: none;
+  width: 23px;
+  height: 26px;
+  box-sizing: border-box;
+}
+._menu-wrapper ._menu_item ._link_icon._link_icon_mail {
+  background-image: url("../images/mail.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: none;
+  width: 26px;
+  height: 23px;
+  box-sizing: border-box;
+}
+._menu-wrapper ._menu_item ._link_icon._link_icon_setting {
+  background-image: url("../images/setting.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: none;
+}
+._menu-wrapper ._menu_item ._link_icon._link_icon_logout {
+  background-image: url("../images/logout.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: none;
+}
+._menu-wrapper ._menu_item ._link_icon:hover {
+  opacity: 0.5;
+}
+._menu-wrapper ._menu_item:last-of-type {
+  margin-top: auto;
+}
+
+/* <section class="_greeting _greeting_container">
+<div class="_text">
+  <h2 class="_title">Hello Josh!</h2>
+  <p class="_subtytle">It’s good to see you again.</p>
+</div>
+<div class="_user_img"></div>
+</section> */
+._greeting {
+  background: #F5F5F7;
+  border-radius: 14px;
+  width: 620px;
+  height: 160px;
+  box-sizing: border-box;
+}
+._greeting._greeting_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+}
+._greeting ._title {
+  color: #0C0B0B;
+  font-family: "Baloo Regular";
+  font-style: normal;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 57px;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+._greeting ._subtytle {
+  color: #0C0B0B;
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+._greeting ._user_img {
+  background-image: url("../images/user_img.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: none;
+  width: 175px;
+  height: 191px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Baloo Regular";
+  src: url("../fonts/Baloo-Bhaijaan-Regular/BalooBhaijaan-Regular.ttf");
+}
+._body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 32px;
+  padding-right: 80px;
+  box-sizing: border;
+}
+
+._header {
+  width: 132px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 45px;
+  background-color: #0C0B0B;
+  border-width: 0px;
+  border-style: none;
+  border-color: none;
+  border-radius: 24px;
+  margin-right: 72px;
+}
+._header > ._nav-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Baloo Regular";
+  src: url("../fonts/Baloo-Bhaijaan-Regular/BalooBhaijaan-Regular.ttf");
+}/*# sourceMappingURL=app.css.map */

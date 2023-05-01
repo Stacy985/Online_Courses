@@ -1,0 +1,32 @@
+@import './core';
+
+
+._body{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+
+
+    @include size(100%, 100vh);
+
+    @include spacing(padding, y, 5vh);
+    @include spacing(padding, left, 32px);
+    @include spacing(padding, right, 80px);
+
+    box-sizing: border;
+}
+
+._header{
+    @include size(132px, 100%);
+
+    @include spacing(padding, all, 45px);
+    background-color: #0C0B0B;
+    @include border(0px, none, none, 24px);
+     margin-right: 72px;
+
+    & > ._nav-container{
+        @include size(100%, 100%);
+        @include flex(0, column, center)
+    }
+}
