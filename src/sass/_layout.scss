@@ -30,3 +30,19 @@
         @include flex(0, column, center)
     }
 }
+
+
+._main{
+    & > ._greeting{
+        @include block(14px);
+        @include size(620px, 160px);
+        
+        &._greeting_container{
+            @include flex(0, row, space-around);
+        }
+    }
+}
+
+
+
+

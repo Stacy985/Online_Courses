@@ -68,32 +68,22 @@
     }
 }
 
-/* <section class="_greeting _greeting_container">
-<div class="_text">
-  <h2 class="_title">Hello Josh!</h2>
-  <p class="_subtytle">It’s good to see you again.</p>
-</div>
-<div class="_user_img"></div>
-</section> */
+
 
 ._greeting{
-    @include block(14px);
-    @include size(620px, 160px);
-    &._greeting_container{
-        @include flex(0, row, space-around);
-    }
-    ._title{
+
+    & ._title{
         @include font(#0C0B0B, $font-Baloo-Regular, normal, 36px, 57px)
     }
-    ._subtytle{
+
+    & ._subtytle{
         @include font(#0C0B0B, $font-Roboto-Regular, normal, 16px, 24px)
     }
        
-        ._user_img{
+    & ._user_img{
         @include background(url('../images/user_img.svg'));
         @include size(175px, 191px);
         margin-bottom: 25px;
-         }
+    }
 }
 
-    // $color: white, $family: 'Roboto Regular', $style: normal, $size: 14px, $height: 16px, $weight: 400, $underline: none, $underline-offset: 3px)
